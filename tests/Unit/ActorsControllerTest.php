@@ -31,7 +31,7 @@ class ActorsControllerTest extends TestCase
     */
     public function test_number_of_records(): void
     {
-        $response = $this->get("/actor");
+        $response = $this->get("/allactors");
         $this->assertTrue(count(json_decode($response->original)) == 200);
     }
 }
